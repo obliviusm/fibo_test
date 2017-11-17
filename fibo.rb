@@ -1,3 +1,5 @@
+require './timer';
+
 def fibo_recursion(n)
   if n <= 0
     0
@@ -8,4 +10,7 @@ def fibo_recursion(n)
   end
 end
 
-p fibo_recursion(10)
+general_time = Timer.exec_time do
+  fibo_recursion(20)
+end
+p general_time
