@@ -11,6 +11,6 @@ def fibo_recursion(n)
 end
 
 general_time = Timer.exec_time do
-  fibo_recursion(10)
+  fibo_recursion(35)
 end
-p general_time
+p general_time # 1.002245705

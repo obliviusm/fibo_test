@@ -11,4 +11,7 @@ def fibo_cycle(n)
   second
 end
 
-p fibo_cycle(10)
+general_time = Timer.exec_time do
+  fibo_cycle(35)
+end
+p general_time # 4.373e-06
